@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Mugs = () => {
+const Stickers = () => {
   return (
     <div>
       <section class="text-gray-600 body-font">
@@ -15,17 +15,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The Catalyzer
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -36,17 +36,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Shooting Stars
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -57,17 +57,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Neptune
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -78,17 +78,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The 400 Blows
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -99,17 +99,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The Catalyzer
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -120,17 +120,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Shooting Stars
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -141,17 +141,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Neptune
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
             <Link
@@ -162,17 +162,17 @@ const Mugs = () => {
                 <img
                   alt="ecommerce"
                   class="h-auto block"
-                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
+                  src="https://m.media-amazon.com/images/I/61v9aRiuDOL._SL1000_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  Mugs
+                  Stickers
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The 400 Blows
                 </h2>
-                <p class="mt-1">₹149</p>
+                <p class="mt-1">₹49</p>
               </div>
             </Link>
           </div>
@@ -182,4 +182,4 @@ const Mugs = () => {
   );
 };
 
-export default Mugs;
+export default Stickers;

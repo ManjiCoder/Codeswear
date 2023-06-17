@@ -20,7 +20,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The Catalyzer
@@ -42,7 +42,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Shooting Stars
@@ -64,7 +64,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Neptune
@@ -86,7 +86,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The 400 Blows
@@ -108,7 +108,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The Catalyzer
@@ -130,7 +130,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Shooting Stars
@@ -152,7 +152,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   Neptune
@@ -174,7 +174,7 @@ const Hoodies = () => {
               </a>
               <div class="mt-4 md:w-full">
                 <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  T-Shirts
+                  Hoodies
                 </h3>
                 <h2 class="text-gray-900 title-font text-lg font-medium">
                   The 400 Blows
