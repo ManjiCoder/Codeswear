@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
 
-const Tshirts = () => {
+const Mugs = () => {
   return (
     <div>
       <section class="text-gray-600 body-font">
@@ -15,8 +14,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -37,8 +36,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -59,8 +58,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -81,8 +80,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -103,8 +102,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -125,8 +124,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -147,8 +146,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -169,8 +168,8 @@ const Tshirts = () => {
               <a class="block relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
-                  class="h-[36vh] block"
-                  src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
+                  class="h-auto block"
+                  src="https://m.media-amazon.com/images/I/51avwa7AzOL._AC_UL400_.jpg"
                 />
               </a>
               <div class="mt-4 md:w-full">
@@ -191,4 +190,4 @@ const Tshirts = () => {
   );
 };
 
-export default Tshirts;
+export default Mugs;
