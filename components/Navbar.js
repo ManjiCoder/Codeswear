@@ -57,7 +57,7 @@ const Navbar = () => {
 
       <div
         ref={ref}
-        className="sideCart bg-pink-100 py-4 pl-5 pr-10 rounded-sm shadow-md absolute z-10 min-h-full top-12 right-0 transform translate-x-full duration-500"
+        className="sideCart bg-pink-100 py-4 pl-5 sm:pr-5 pr-10 rounded-sm shadow-md absolute z-10 min-h-full top-12 right-0 transform translate-x-full duration-500"
       >
         <button
           className="absolute text-2xl top-1 right-1 text-pink-600"
