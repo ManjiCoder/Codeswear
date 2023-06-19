@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 // Dynamic Route
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const Post = () => {
-  const [pin, setPin] = useState(null);
+  const [pin, setPin] = useState("");
   const [service, setService] = useState(null);
 
   const checkServicebility = async (e) => {
@@ -23,14 +24,18 @@ const Post = () => {
     setPin(e.target.value);
   };
   const router = useRouter();
-  // // console.log(router);
-  // const { slug } = router.query;
+  // console.log(router);
+  const { slug } = router.query;
+  console.log(slug);
+
   return (
     <>
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-16 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
-            <img
+            <Image
+              height={400}
+              width={400}
               alt="ecommerce"
               className="lg:w-1/2 w-full lg:h-auto sm:px-24 lg:px-5 object-cover object-top rounded"
               src="https://m.media-amazon.com/images/I/61rSf7lBx1L._AC_UL400_.jpg"
@@ -47,9 +52,9 @@ const Post = () => {
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 text-pink-500"
                     viewBox="0 0 24 24"
                   >
@@ -58,9 +63,9 @@ const Post = () => {
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 text-pink-500"
                     viewBox="0 0 24 24"
                   >
@@ -69,9 +74,9 @@ const Post = () => {
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 text-pink-500"
                     viewBox="0 0 24 24"
                   >
@@ -80,9 +85,9 @@ const Post = () => {
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 text-pink-500"
                     viewBox="0 0 24 24"
                   >
@@ -91,9 +96,9 @@ const Post = () => {
                   <svg
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-4 h-4 text-pink-500"
                     viewBox="0 0 24 24"
                   >
@@ -105,9 +110,9 @@ const Post = () => {
                   <a className="text-gray-500">
                     <svg
                       fill="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -117,9 +122,9 @@ const Post = () => {
                   <a className="text-gray-500">
                     <svg
                       fill="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -129,9 +134,9 @@ const Post = () => {
                   <a className="text-gray-500">
                     <svg
                       fill="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       className="w-5 h-5"
                       viewBox="0 0 24 24"
                     >
@@ -168,9 +173,9 @@ const Post = () => {
                       <svg
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         className="w-4 h-4"
                         viewBox="0 0 24 24"
                       >
@@ -193,9 +198,9 @@ const Post = () => {
                 <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <svg
                     fill="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="w-5 h-5"
                     viewBox="0 0 24 24"
                   >

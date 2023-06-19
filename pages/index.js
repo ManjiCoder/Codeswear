@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,15 +13,15 @@ export default function Home() {
       <Image
         src="/home.png"
         width={500}
-        height={500}
-        className="w-full h-auto"
+        height={700}
+        className="w-full h-[92vh]"
         alt="CodesWear"
       />
 
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 pb-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <h1 className="sm:text-3xl pt-24 text-2xl font-medium title-font mb-2 text-gray-900">
               Wear the Code with codeswear.com
             </h1>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">

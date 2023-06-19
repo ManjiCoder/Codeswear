@@ -24,13 +24,15 @@ const Navbar = () => {
   return (
     <header className="py-2 shadow-xl flex flex-col md:flex-row items-center">
       <div className="logo mx-3">
-        <Image
-          src="/logo.png"
-          width={200}
-          height={40}
-          alt="CodesWear.com"
-          className="-mt-2"
-        ></Image>
+        <Link href="/">
+          <Image
+            src="/logo.png"
+            width={200}
+            height={40}
+            alt="CodesWear.com"
+            className="-mt-2"
+          ></Image>
+        </Link>
       </div>
       <nav>
         <ul className="font-semibold flex flex-col md:flex-row md:space-x-6 items-center md:text-base">
@@ -65,10 +67,10 @@ const Navbar = () => {
         >
           <AiFillCloseCircle />
         </button>
-        <h2 className="font-semibold text-xl mb-3 text-center">
+        <h2 className="font-semibold  text-xl md:text-2xl  mb-3 text-center">
           Shopping Cart
         </h2>
-        <ol className="list-decimal font-semibold ml-4 gap-y-5 flex flex-col ">
+        <ol className="list-decimal font-semibold ml-4 gap-y-5 flex flex-col text-xs md:text-base">
           <li>
             <div className="flex space-x-4 ml-4">
               <h3>T-shirts</h3>
@@ -86,11 +88,11 @@ const Navbar = () => {
             </div>
           </li>
           <li>
-            <div className="flex space-x-4 ml-4">
+            <div className="flex flex-grow space-x-2 md:space-x-4 ml-4">
               <h3>T-shirts</h3>
               <span>-</span>
               <desc>Wear the code</desc>
-              <div className="flex gap-x-1.5">
+              <div className="flex gap-x-1.5 place-self-end">
                 <button className="text-2xl text-pink-600">
                   <AiFillPlusCircle />
                 </button>
@@ -135,11 +137,11 @@ const Navbar = () => {
           </li>
         </ol>
         <div className="flex mt-3">
-          <button class="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
+          <button className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
             <BsFillBagCheckFill className="mr-1.5" />
             Checkout
           </button>
-          <button class="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-11 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
+          <button className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-11 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
             ClearAll
           </button>
         </div>
