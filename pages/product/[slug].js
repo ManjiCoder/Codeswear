@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 // Dynamic Route
 import Image from "next/image";
-import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-const Post = () => {
+const Post = ({ slug }) => {
+  // console.log(slug);
   const [pin, setPin] = useState("");
   const [service, setService] = useState(null);
 
@@ -23,10 +23,6 @@ const Post = () => {
   const onChangePin = (e) => {
     setPin(e.target.value);
   };
-  const router = useRouter();
-  // console.log(router);
-  const { slug } = router.query;
-  console.log(slug);
 
   return (
     <>
@@ -248,3 +244,15 @@ const Post = () => {
 };
 
 export default Post;
+
+export const getServerSideProps = async (context) => {
+  const { slug } = context.params;
+  const res = await fetch("http://localhost:3000/api/allproducts");
+  const allproduct = await res.json();
+  if (!allproduct.includes(slug)) {
+    return {
+      notFound: true,
+    };
+  }
+  return { props: { slug } };
+};

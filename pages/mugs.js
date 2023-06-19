@@ -9,7 +9,7 @@ const Mugs = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex justify-center md:justify-evenly gap-y-4 gap-x-3 flex-wrap -m-4">
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -31,7 +31,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -53,7 +53,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -75,7 +75,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -97,7 +97,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -119,7 +119,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -141,7 +141,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
@@ -163,7 +163,7 @@ const Mugs = () => {
               </div>
             </Link>
             <Link
-              href={"/product/wear-the-code"}
+              href={"/product/wear-the-code-mug"}
               className="lg:w-1/5 md:w-1/3 p-4 w-4/5 flex flex-col items-center shadow-lg"
             >
               <Image
