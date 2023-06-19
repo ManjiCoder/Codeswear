@@ -57,7 +57,7 @@ const Navbar = () => {
 
       <div
         ref={ref}
-        className="sideCart bg-pink-100 py-4 pl-5 pr-10 rounded-sm shadow-md absolute top-12 right-0 transform translate-x-full duration-500"
+        className="sideCart bg-pink-100 py-4 pl-5 pr-10 rounded-sm shadow-md absolute z-10 min-h-full top-12 right-0 transform translate-x-full duration-500"
       >
         <button
           className="absolute text-2xl top-1 right-1 text-pink-600"
@@ -134,10 +134,15 @@ const Navbar = () => {
             </div>
           </li>
         </ol>
-        <button class="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
-          <BsFillBagCheckFill className="mr-1.5" />
-          Checkout
-        </button>
+        <div className="flex mt-3">
+          <button class="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
+            <BsFillBagCheckFill className="mr-1.5" />
+            Checkout
+          </button>
+          <button class="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-11 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
+            ClearAll
+          </button>
+        </div>
       </div>
     </header>
   );
