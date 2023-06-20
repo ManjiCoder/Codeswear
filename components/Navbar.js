@@ -10,7 +10,14 @@ import {
 
 import { BsFillBagCheckFill } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({
+  cart,
+  addItemToCart,
+  removeItemFromCart,
+  subTotal,
+  clearCart,
+}) => {
+  // console.log(Object.keys(cart));
   const ref = useRef();
   const toggleCart = () => {
     if (ref.current.classList.contains("translate-x-full")) {
@@ -71,77 +78,52 @@ const Navbar = () => {
           Shopping Cart
         </h2>
         <ol className="list-decimal font-semibold ml-4 gap-y-5 flex flex-col text-xs md:text-base">
-          <li>
-            <div className="flex space-x-4 ml-4">
-              <h3>T-shirts</h3>
-              <span>-</span>
-              <desc>Wear the code</desc>
-              <div className="flex place-items-center gap-x-1.5">
-                <button className="text-2xl text-pink-600">
-                  <AiFillPlusCircle />
-                </button>
-                <span>3</span>
-                <button className="text-2xl text-pink-600">
-                  <AiFillMinusCircle />
-                </button>
+          {Object.keys(cart).length === 0 && <div>You cart is empty!</div>}
+          {Object.keys(cart).map((itemCode) => (
+            <li key={itemCode}>
+              <div className="flex space-x-4 ml-4">
+                <h3>T-shirts</h3>
+                <span>-</span>
+                <h3>Wear the code</h3>
+                <div className="flex place-items-center gap-x-1.5">
+                  <button
+                    className="text-2xl text-pink-600"
+                    onClick={() =>
+                      addItemToCart(itemCode, 1, 499, itemCode, "XL", "Blue")
+                    }
+                  >
+                    <AiFillPlusCircle />
+                  </button>
+                  <span>{cart[itemCode].qty}</span>
+                  <button
+                    className="text-2xl text-pink-600"
+                    onClick={() =>
+                      removeItemFromCart(
+                        itemCode,
+                        1,
+                        499,
+                        itemCode,
+                        "XL",
+                        "Blue"
+                      )
+                    }
+                  >
+                    <AiFillMinusCircle />
+                  </button>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div className="flex flex-grow space-x-2 md:space-x-4 ml-4">
-              <h3>T-shirts</h3>
-              <span>-</span>
-              <desc>Wear the code</desc>
-              <div className="flex gap-x-1.5 place-self-end">
-                <button className="text-2xl text-pink-600">
-                  <AiFillPlusCircle />
-                </button>
-                <span>3</span>
-                <button className="text-2xl text-pink-600">
-                  <AiFillMinusCircle />
-                </button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="flex space-x-4 ml-4">
-              <h3>T-shirts </h3>
-              <span>-</span>
-              <desc>Wear the code</desc>
-              <div className="flex gap-x-1.5">
-                <button className="text-2xl text-pink-600">
-                  <AiFillPlusCircle />
-                </button>
-                <span>3</span>
-                <button className="text-2xl text-pink-600">
-                  <AiFillMinusCircle />
-                </button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="flex space-x-4 ml-4">
-              <h3>T-shirts</h3>
-              <span>-</span>
-              <desc>Wear the code</desc>
-              <div className="flex gap-x-1.5">
-                <button className="text-2xl text-pink-600">
-                  <AiFillPlusCircle />
-                </button>
-                <span>3</span>
-                <button className="text-2xl text-pink-600">
-                  <AiFillMinusCircle />
-                </button>
-              </div>
-            </div>
-          </li>
+            </li>
+          ))}
         </ol>
-        <div className="flex mt-3">
+        <div className="flex mt-3 space-x-3">
           <button className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
             <BsFillBagCheckFill className="mr-1.5" />
             Checkout
           </button>
-          <button className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-11 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
+          <button
+            className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-11 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center"
+            onClick={clearCart}
+          >
             ClearAll
           </button>
         </div>

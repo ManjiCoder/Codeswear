@@ -4,7 +4,14 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const Post = ({ slug }) => {
+const Post = ({
+  slug,
+  cart,
+  addItemToCart,
+  removeItemFromCart,
+  subTotal,
+  clearCart,
+}) => {
   // console.log(slug);
   const [pin, setPin] = useState("");
   const [service, setService] = useState(null);
@@ -189,7 +196,12 @@ const Post = ({ slug }) => {
                 <span className="title-font font-medium text-2xl text-gray-900">
                   ₹499
                 </span>
-                <button className="flex ml-4 text-white bg-pink-500 border-0 py-2 px-4 focus:outline-none hover:bg-pink-600 rounded">
+                <button
+                  className="flex ml-4 text-white bg-pink-500 border-0 py-2 px-4 focus:outline-none hover:bg-pink-600 rounded"
+                  onClick={() =>
+                    addItemToCart(slug, 1, 499, slug, "XL", "Blue")
+                  }
+                >
                   Add to Cart
                 </button>
                 <button className="flex ml-4 text-white bg-pink-500 border-0 py-2 px-4 focus:outline-none hover:bg-pink-600 rounded">
