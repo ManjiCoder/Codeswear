@@ -16,6 +16,7 @@ export default function Home() {
         height={700}
         className="w-full h-[92vh]"
         alt="CodesWear"
+        loading="lazy"
       />
 
       <section className="text-gray-600 body-font">

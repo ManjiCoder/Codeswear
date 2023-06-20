@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -5,6 +6,9 @@ import React from "react";
 const Hoodies = () => {
   return (
     <div>
+      <Head>
+        <title>Codeswear - Hoodies</title>
+      </Head>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex justify-center md:justify-evenly gap-y-4 gap-x-3 flex-wrap -m-4">

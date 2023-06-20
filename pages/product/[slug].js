@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 // Dynamic Route
+import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -26,6 +27,9 @@ const Post = ({ slug }) => {
 
   return (
     <>
+      <Head>
+        <title>Codeswear - {slug}</title>
+      </Head>
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-16 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
