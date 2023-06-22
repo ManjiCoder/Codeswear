@@ -5,7 +5,7 @@ import { BsFillBagCheckFill } from "react-icons/bs";
 
 const Checkout = ({ cart, addItemToCart, removeItemFromCart, subTotal }) => {
   return (
-    <div className="container m-auto">
+    <div className="container mx-3">
       <h1 className="font-bold text-3xl my-8 text-center">Checkout</h1>
       <h2 className="text-xl font-bold">1. Delivery Details</h2>
       <form>
@@ -124,8 +124,8 @@ const Checkout = ({ cart, addItemToCart, removeItemFromCart, subTotal }) => {
       </form>
 
       <h2 className="text-xl font-bold">2. Review Cart Items & Pay</h2>
-      <div className="sideCart text-xl bg-pink-100 m-4 p-6 rounded-sm shadow-md ">
-        <ol className="list-decimal font-semibold ml-4 gap-y-5 flex flex-col text-xs md:text-base">
+      <div className="sideCart md:text-xl bg-pink-100 my-4 md:m-4 p-6 rounded-sm shadow-md ">
+        <ol className="list-decimal font-semibold gap-y-5 flex flex-col text-base md:text-base">
           {Object.keys(cart).length === 0 && <div>You cart is empty!</div>}
           {Object.keys(cart).map((itemCode) => (
             <li key={itemCode}>
@@ -167,7 +167,7 @@ const Checkout = ({ cart, addItemToCart, removeItemFromCart, subTotal }) => {
       <div className="font-semibold my-4 px-6">
         Sub-Total : <b className="font-bold">₹{subTotal}</b>
       </div>
-      <button className="mx-6">
+      <button className="block mx-auto md:mx-6">
         <Link
           href="/checkout"
           className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded font-semibold place-items-center"
