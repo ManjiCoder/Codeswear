@@ -1,8 +1,7 @@
 /* eslint-disable react/button-has-type */
-/* eslint-disable quotes */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React from 'react';
 
 function Order() {
   return (
