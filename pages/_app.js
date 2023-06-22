@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }) {
     // console.log("useEffect _app.js");
     try {
       if (localStorage.getItem("cart")) {
-        setCart(JSON.parse(localStorage.getItem("cart")));
+        let myCart = JSON.parse(localStorage.getItem("cart"));
+        setCart(myCart);
+        saveCart(myCart);
       }
     } catch (error) {
       console.error(error);
@@ -49,10 +51,11 @@ function MyApp({ Component, pageProps }) {
   const saveCart = (myCart) => {
     localStorage.setItem("cart", JSON.stringify(myCart));
     let subt = 0;
-    let keys = Object.keys(cart);
+    let keys = Object.keys(myCart);
     for (let i = 0; i < keys.length; i++) {
       if (myCart[keys[i]] !== undefined) {
-        subt += myCart[keys[i]].qty;
+        subt += myCart[keys[i]].qty * myCart[keys[i]].price;
+        console.log(subt);
       }
     }
     setSubTotal(subt);

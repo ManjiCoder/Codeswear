@@ -20,7 +20,10 @@ const Navbar = ({
   // console.log(Object.keys(cart));
   const ref = useRef();
   const toggleCart = () => {
-    if (ref.current.classList.contains("translate-x-full")) {
+    if (
+      Object.keys(cart).length !== 0 &&
+      ref.current.classList.contains("translate-x-full")
+    ) {
       ref.current.classList.remove("translate-x-full");
       ref.current.classList.add("translate-x-0");
     } else if (!ref.current.classList.contains("translate-x-full")) {
@@ -29,7 +32,7 @@ const Navbar = ({
     }
   };
   return (
-    <header className="py-2 shadow-xl flex flex-col md:flex-row items-center">
+    <header className="sticky top-0 z-10 bg-blend-color-burn bg-white py-2 shadow-xl flex flex-col md:flex-row items-center">
       <div className="logo mx-3">
         <Link href="/">
           <Image
@@ -66,7 +69,9 @@ const Navbar = ({
 
       <div
         ref={ref}
-        className="sideCart bg-pink-100 py-4 pl-5 sm:pr-5 pr-10 rounded-sm shadow-md absolute z-10 min-h-full top-12 right-0 transform translate-x-full duration-500"
+        className={`sideCart absolute h-screen bg-pink-100 py-4 pl-5 sm:pr-5 pr-10 rounded-sm shadow-md z-10 min-h-full top-14 right-0 transform transition-transform duration-500 ${
+          Object.keys(cart).length !== 0 ? "translate-x-0" : "translate-x-full"
+        }`}
       >
         <button
           className="absolute text-2xl top-1 right-1 text-pink-600"
@@ -115,10 +120,18 @@ const Navbar = ({
             </li>
           ))}
         </ol>
+        <div className="font-semibold my-4">
+          Sub-Total : <b className="font-bold">₹{subTotal}</b>
+        </div>
         <div className="flex mt-3 space-x-3">
-          <button className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center">
-            <BsFillBagCheckFill className="mr-1.5" />
-            Checkout
+          <button>
+            <Link
+              href="/checkout"
+              className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center"
+            >
+              <BsFillBagCheckFill className="mr-1.5" />
+              Checkout
+            </Link>
           </button>
           <button
             className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-11 focus:outline-none hover:bg-pink-600 rounded text-sm place-items-center"
