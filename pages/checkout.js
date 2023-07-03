@@ -1,9 +1,11 @@
-import Link from "next/link";
-import React from "react";
-import { AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
-import { BsFillBagCheckFill } from "react-icons/bs";
+import Link from 'next/link';
+import React from 'react';
+import { AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai';
+import { BsFillBagCheckFill } from 'react-icons/bs';
 
-const Checkout = ({ cart, addItemToCart, removeItemFromCart, subTotal }) => {
+function Checkout({
+  cart, addItemToCart, removeItemFromCart, subTotal,
+}) {
   return (
     <div className="container mx-3">
       <h1 className="font-bold text-3xl my-8 text-center">Checkout</h1>
@@ -136,25 +138,21 @@ const Checkout = ({ cart, addItemToCart, removeItemFromCart, subTotal }) => {
                 <div className="flex place-items-center gap-x-1.5">
                   <button
                     className="text-2xl text-pink-600"
-                    onClick={() =>
-                      addItemToCart(itemCode, 1, 499, itemCode, "XL", "Blue")
-                    }
+                    onClick={() => addItemToCart(itemCode, 1, 499, itemCode, 'XL', 'Blue')}
                   >
                     <AiFillPlusCircle />
                   </button>
                   <span>{cart[itemCode].qty}</span>
                   <button
                     className="text-2xl text-pink-600"
-                    onClick={() =>
-                      removeItemFromCart(
-                        itemCode,
-                        1,
-                        499,
-                        itemCode,
-                        "XL",
-                        "Blue"
-                      )
-                    }
+                    onClick={() => removeItemFromCart(
+                      itemCode,
+                      1,
+                      499,
+                      itemCode,
+                      'XL',
+                      'Blue',
+                    )}
                   >
                     <AiFillMinusCircle />
                   </button>
@@ -165,19 +163,25 @@ const Checkout = ({ cart, addItemToCart, removeItemFromCart, subTotal }) => {
         </ol>
       </div>
       <div className="font-semibold my-4 px-6">
-        Sub-Total : <b className="font-bold">₹{subTotal}</b>
+        Sub-Total :
+        {' '}
+        <b className="font-bold">
+          ₹
+          {subTotal}
+        </b>
       </div>
-      <button className="block mx-auto md:mx-6">
+      <button type="button" className="block mx-auto md:mx-6">
         <Link
           href="/checkout"
           className="flex mt-4 mx-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded font-semibold place-items-center"
         >
           <BsFillBagCheckFill className="mr-1.5" />
-          Pay - ₹{subTotal}
+          Pay - ₹
+          {subTotal}
         </Link>
       </button>
     </div>
   );
-};
+}
 
 export default Checkout;
